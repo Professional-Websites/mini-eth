@@ -1,0 +1,166 @@
+(function () {
+	window.onload = function () {
+		window.setTimeout(fadeout, 500);
+	};
+	function fadeout() {
+		document.querySelector(".preloader").style.opacity = "0";
+		document.querySelector(".preloader").style.display = "none";
+	}
+	window.onscroll = function () {
+		var header_navbar = document.querySelector(".navbar-area");
+		var sticky = header_navbar.offsetTop;
+		if (window.pageYOffset > sticky) {
+			header_navbar.classList.add("sticky");
+		} else {
+			header_navbar.classList.remove("sticky");
+		}
+		var backToTo = document.querySelector(".scroll-top");
+		if (
+			document.body.scrollTop > 50 ||
+			document.documentElement.scrollTop > 50
+		) {
+			backToTo.style.display = "flex";
+		} else {
+			backToTo.style.display = "none";
+    }
+
+  // for popup
+
+    var pop = document.querySelector(".single-pop");
+		if (
+			document.body.scrollTop > 50 ||
+			document.documentElement.scrollTop > 50
+		) {
+			pop.style.display = "block";
+		} else {
+			pop.style.display = "none";
+    }
+	};
+
+	let navbarToggler = document.querySelector(".navbar-toggler");
+	var navbarCollapse = document.querySelector(".collapse");
+	document.querySelectorAll(".page-scroll").forEach((e) =>
+		e.addEventListener("click", () => {
+			navbarToggler.classList.remove("active");
+			navbarCollapse.classList.remove("show");
+		})
+	);
+	navbarToggler.addEventListener("click", function () {
+		navbarToggler.classList.toggle("active");
+  });
+
+  //========= glightbox
+	const glightbox = GLightbox({
+		selector: ".glightbox",
+	});
+
+})();
+
+function myFunction() {
+	var copyText = document.getElementById("myInput");
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	document.execCommand("copy");
+
+	var tooltip = document.getElementById("myTooltip");
+	tooltip.innerHTML = "Copied";
+}
+
+function outFunc() {
+	var tooltip = document.getElementById("myTooltip");
+	tooltip.innerHTML = "Copy to clipboard";
+}
+
+
+
+
+
+
+
+
+
+
+
+function myFunction1() {
+	var copyText = document.getElementById("myInput-1");
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	document.execCommand("copy");
+
+	var tooltip = document.getElementById("myTooltip-1");
+	tooltip.innerHTML = "Copied";
+}
+
+function outFunc1() {
+	var tooltip = document.getElementById("myTooltip");
+	tooltip.innerHTML = "Copy to clipboard";
+}
+
+//
+function myFunction2() {
+	var copyText = document.getElementById("myInput-2");
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	document.execCommand("copy");
+
+	var tooltip = document.getElementById("myTooltip-2");
+	tooltip.innerHTML = "Copied";
+}
+
+function outFunc2() {
+	var tooltip = document.getElementById("myTooltip-2");
+	tooltip.innerHTML = "Copy to clipboard";
+}
+//
+
+//
+function myFunction3() {
+	var copyText = document.getElementById("myInput-3");
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	document.execCommand("copy");
+
+	var tooltip = document.getElementById("myTooltip-3");
+	tooltip.innerHTML = "Copied";
+}
+
+function outFunc3() {
+	var tooltip = document.getElementById("myTooltip-3");
+	tooltip.innerHTML = "Copy to clipboard";
+}
+//
+
+//
+function myFunction4() {
+	var copyText = document.getElementById("myInput-4");
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	document.execCommand("copy");
+
+	var tooltip = document.getElementById("myTooltip-4");
+	tooltip.innerHTML = "Copied";
+}
+
+function outFunc4() {
+	var tooltip = document.getElementById("myTooltip-4");
+	tooltip.innerHTML = "Copy to clipboard";
+}
+//
+
+
+//
+function myFunction5() {
+	var copyText = document.getElementById("myInput-5");
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	document.execCommand("copy");
+
+	var tooltip = document.getElementById("myTooltip-5");
+	tooltip.innerHTML = "Copied";
+}
+
+function outFunc5() {
+	var tooltip = document.getElementById("myTooltip-5");
+	tooltip.innerHTML = "Copy to clipboard";
+}
+//
